@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Chrome Extension</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+	
+	<button id="settings-btn">Settings</button>
+
+	<div class="settings" id="settings">
+		<form action="#" class="name-form" id="name-form">
+			<input type="text" class="name-input" id="name-input" placeholder="Type your name here...">
+
+			<button class="name-button" type="submit">Add</button>
+		</form>
+	</div>
+    <p><span class="time" id="time"></span></p>
+    <p><span class="date" id="date"></span></p>
+	<div class="greeting-and-compliment">
+            <div class="greeting-and-name">
+                <h1 class="main-header"><span class="greeting" id="greeting"> </span> <span class="name" id="name"></span></h1>
+            </div>
+            <div class="compliment-container">
+                <h2><span class="compliment" id="compliment"></span></h2>
+            </div>
+    </div>
+
+    <div class="to-do-list" id="to-do-list">
+            <h2 class="to-do-list-header">To Do Today</h2>
+            <div class="task-list">
+              <ul class="ul-task-list" id="ul-task-list">
+              </ul> 
+          </div>
+          
+          <div class="input-and-add">
+              <form class="input-and-add-form" id="input-and-add-form" action="#">
+                  <input class="task-input" type="text" id="myInput" placeholder="Type a new task here...">
+                  <button type="submit" class="addBtn">Add</button>
+              </form>
+          </div>
+  
+      </div>
+      
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
